@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/ff0998e42b.js" crossorigin="anonymous"></script>
 
 	<!-- SCRIPTS ORIGINAUX -->
 
@@ -18,6 +19,8 @@
 
 	<!-- SCRIPTS NEW -->
 	<script type=module src="./assets/gallery.js"></script>
+	<script type=module src="./assets/modale.js"></script>
+
 </head>
 <body>
 <div class="top-header">
@@ -76,7 +79,7 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<form class="gallery-filter">			
-			<label><input type="radio" name="cat" hidden="true"><span class="btn">Tous</span></label>
+			<label><input type="radio" name="cat" id="tous" hidden="true"><span class="btn">Tous</span></label>
 		</form>
 		<div class="gallery">
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"/>
@@ -163,5 +166,14 @@
 		</div>
 	</div>
 </div>
+
+<div class="modale" aria-hidden="true" role="dialog" aria-modal="false" style="display: none;">
+	<div class="modale-content">
+		<div class="img-prev"><i class="fa-solid fa-square-caret-left"></i></div>
+		<div class="img-body"></div>
+		<div class="img-next"><i class="fa-solid fa-square-caret-right"></i></div>
+	</div>
+</div>
+
 </body>
 </html>
