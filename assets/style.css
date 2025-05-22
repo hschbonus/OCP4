@@ -59,7 +59,7 @@ input[type=radio]:checked + .btn {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #222; /* Passe de #fff à #222 pour plus de contraste sur fond clair */
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -74,6 +74,7 @@ input[type=radio]:checked + .btn {
 	padding-block: 100px;
 	position: relative;
 }
+
 
 .picture.left::before {
 	content: ' ';
