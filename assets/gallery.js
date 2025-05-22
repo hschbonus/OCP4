@@ -51,5 +51,4 @@ for (let i = 0; i < allCategories.length; i++) {
     allCategories[i].addEventListener("click", filter);
 }
 
-// MODALE
 

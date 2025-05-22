@@ -52,9 +52,9 @@ const stopPropagation = (e) => {
 const afficherPrecedent = (e) => {
 	const imgPlace = document.querySelector('.img-body');
 	const imgSrc = imgPlace.querySelector('img').getAttribute('src');
-	const allImg = document.querySelectorAll(".gallery img");
+    const allImg = Array.from(document.querySelectorAll(".gallery img"))
+        .filter(img => getComputedStyle(img).display === 'block');
 	let currentIndex = Array.from(allImg).findIndex(img => img.getAttribute('src') === imgSrc);
-    console.log(currentIndex);
 	currentIndex = (currentIndex - 1 + allImg.length) % allImg.length;
 
 	imgPlace.innerHTML = `<img src="${allImg[currentIndex].getAttribute('src')}" alt="${allImg[currentIndex].getAttribute('alt')}">`;
@@ -63,9 +63,9 @@ const afficherPrecedent = (e) => {
 const afficherSuivant = (e) => {
 	const imgPlace = document.querySelector('.img-body');
 	const imgSrc = imgPlace.querySelector('img').getAttribute('src');
-	const allImg = document.querySelectorAll(".gallery img");
+    const allImg = Array.from(document.querySelectorAll(".gallery img"))
+        .filter(img => getComputedStyle(img).display === 'block');
 	let currentIndex = Array.from(allImg).findIndex(img => img.getAttribute('src') === imgSrc);
-    console.log(currentIndex);
 	currentIndex = (currentIndex + 1) % allImg.length;
 
 	imgPlace.innerHTML = `<img src="${allImg[currentIndex].getAttribute('src')}" alt="${allImg[currentIndex].getAttribute('alt')}">`;
