@@ -16,7 +16,7 @@ const openModal = (e) => {
 	const imgPlace = document.querySelector('.img-body');
 	imgPlace.innerHTML = `<img src="${imgSrc}" alt="${imgAlt}">`;
 
-    document.querySelectorAll('.img-body, .img-next, .img-prev').forEach(elem => {
+    document.querySelectorAll('img, .img-next, .img-prev').forEach(elem => {
         elem.addEventListener('click', stopPropagation);
     })
 };

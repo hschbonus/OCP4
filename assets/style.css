@@ -18,6 +18,8 @@ body {
 	align-items: center;
 }
 
+
+
 .top-header .name {
 	font-size: 26px;
 }
@@ -113,7 +115,7 @@ input[type=radio]:checked + .btn {
 }
 #about-me p {
 	width: 80%;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 /* #gallery {
@@ -277,6 +279,11 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+#about, #about-me, .about-me__title, .about-me__introduction, #about-me p {
+	color: #222 !important;
+}
+
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 1400px) {
@@ -397,6 +404,8 @@ input[type="submit"] {
 		z-index: -1;
 	}
 }
+
+
 
 /* MODALE */
 
