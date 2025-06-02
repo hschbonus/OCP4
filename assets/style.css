@@ -55,7 +55,7 @@ body {
 
 input[type=radio]:checked + .btn {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #8A7E20;
 	border-radius:0 ;
 
 }
